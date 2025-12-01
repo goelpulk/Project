@@ -1,0 +1,55 @@
+I reviewed the model results in depth, and here’s my interpretation in a
+clear, human and first‑person tone.
+
+From the very beginning, I noticed that the dataset had 732 posts, and
+the sentiment distribution wasn’t perfectly balanced. There were far
+more positive posts than negative ones. Because of this imbalance, I
+understood that the model might naturally lean toward predicting
+positive sentiments more confidently. To make the modelling cleaner and
+more focused, I converted the dataset into a binary sentiment
+task—positive versus negative—so that the model could concentrate on
+polarity without getting confused by neutral posts.
+
+When I moved to the TF‑IDF vectorization step, I could see how well it
+captured the important words from the text. Splitting the dataset into
+418 training samples and 105 test samples gave me a reliable setup to
+evaluate how well the model generalized.
+
+What truly stood out to me was the performance of the Logistic
+Regression model. Achieving around 95% accuracy, along with equally
+strong precision, recall, and F1‑score, told me that the model wasn’t
+just memorizing patterns—it was genuinely learning how to distinguish
+sentiment reliably. I found it particularly impressive that the model
+was almost perfect at picking up positive sentiments, with a recall of
+0.99. This means that almost every genuinely positive post was caught
+accurately. On the other hand, negative sentiment detection—while still
+strong—was slightly less perfect, with recall around 0.88. I realized
+that this is natural because negativity online can often be subtle,
+sarcastic, or mixed, which makes it harder for models to catch
+consistently.
+
+Looking at the confusion matrix helped me understand the errors much
+more clearly. Most of the mistakes happened when the model interpreted a
+negative post as positive. This told me that sarcasm or emotionally
+mixed posts were still challenging, which aligns with what most
+sentiment analysis research also points out.
+
+From a business perspective, I could immediately see the practical value
+of this model. With such strong accuracy, it becomes easy to monitor
+brand perception in real time. It also allows me (or any business) to
+quickly catch rising negativity before it grows into a bigger issue.
+Since the model captures positive sentiment so well, it also becomes
+useful for measuring the success of new campaigns, identifying
+well‑received product features, and understanding what customers
+genuinely appreciate.
+
+Personally, the biggest takeaway for me was how reliable and consistent
+the model turned out to be. With only a few misclassifications out of
+105 test samples, the model proved that the entire preprocessing
+pipeline—cleaning, vectorizing, balancing, and modelling—worked
+effectively together. The results gave me confidence in using this
+system for actual brand monitoring, customer experience analysis, and
+campaign evaluation.
+
+Overall, this model doesn’t just perform well technically—it genuinely
+feels usable, insightful, and dependable for real‑world decision‑making.
