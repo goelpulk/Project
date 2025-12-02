@@ -1,5 +1,5 @@
 
-# Social Media Analytics: Sentiment, Trend Analysis & Predictive Engagement Modelling  
+# Social Media Analytics: Sentiment and Trend Analysi  
 ### Goa Institute of Management — Machine Learning for Business Applications (MLBA)
 
 ---
