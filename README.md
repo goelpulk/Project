@@ -203,11 +203,6 @@ Goa Institute of Management — MLBA Course
 
 ---
 
-## 📜 License
-MIT License (or your preferred license)
-
----
-
 ## ⭐ Citation
 
 ```
